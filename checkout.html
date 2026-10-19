@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra | Tienda Caty's</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/checkout.css">
+</head>
+
+<body style="background-color: #ffffff;">
+
+    <header class="checkout-header">
+        <a href="index.html" class="logo">
+            <img src="/img/Logo.svg" alt="Logo de Caty's">
+        </a>
+    </header>
+
+    <div class="checkout-wrapper">
+        
+        <div class="checkout-left">
+            <h1 class="checkout-main-title">FINALIZAR COMPRA</h1>
+
+            <form id="checkout-form" class="checkout-form">
+
+                <div class="form-section">
+                    <h2>1. DATOS PARA BOLETA Y RECOJO</h2>
+                    
+                    <div class="input-group">
+                        <label for="c-nombre">NOMBRES Y APELLIDOS *</label>
+                        <input type="text" id="c-nombre" placeholder="Ej. María Pérez" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="c-dni">DNI O CE *</label>
+                        <input type="number" id="c-dni" placeholder="Tu número de documento" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="c-correo">CORREO ELECTRÓNICO *</label>
+                        <input type="email" id="c-correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="c-celular">NÚMERO DE CELULAR / WHATSAPP *</label>
+                        <input type="tel" id="c-celular" placeholder="999 999 999" maxlength="9" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>2. MÉTODO DE PAGO</h2>
+                    
+                    <div class="payment-methods">
+
+                        <label class="payment-option">
+                            <input type="radio" name="pago" value="tienda" checked>
+                            <div class="payment-info">
+                                <span class="payment-name">Pagar en Tienda</span>
+                                <span class="payment-desc">Reserva tu pedido ahora y págalo cuando vengas a recogerlo a nuestro local.</span>
+                            </div>
+                        </label>
+                        
+                        <label class="payment-option">
+                            <input type="radio" name="pago" value="yape" >
+                            <div class="payment-info">
+                                <span class="payment-name">Yape / Plin</span>
+                                <span class="payment-desc">Aprobación rápida. Te daremos el código QR en el siguiente paso (Whatsapp).</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checkout-terms-group terms-desktop">
+                    <input type="checkbox" id="terminos-datos-desktop" name="terminos-datos" required>
+                    <label for="terminos-datos-desktop">
+                        He leído y acepto los <a href="/terminos-condiciones.html" target="_blank">Terminos y Condiciones</a> y las<a href="/politicas-privacidad.html" target="_blank"> Politicas de privacidad.</a> 
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-checkout-final btn-desktop">GENERAR ORDEN Whatsapp</button>
+
+            </form>
+        </div>
+
+        <div class="checkout-right">
+            
+            <div id="checkout-items-container" class="checkout-items-list"></div>
+
+            <div class="checkout-totals">
+                <div class="totals-row">
+                    <span>SubTotal</span>
+                    <span id="summary-subtotal">S/ 0.00</span>
+                </div>
+                <div class="totals-row">
+                    <span>Retiro en tienda</span>
+                    <span>Gratis</span>
+                </div>
+                <div class="totals-row total-final">
+                    <span>Total</span>
+                    <span><strong id="summary-total">S/ 0.00 PEN</strong></span>
+                </div>
+            </div>
+
+            <div class="checkout-terms-group terms-mobile">
+                <input type="checkbox" id="terminos-datos-mobile" name="terminos-datos-mobile">
+                <label for="terminos-datos-mobile">
+                    He leído y acepto los <a href="/terminos-condiciones.html" target="_blank">Terminos y Condiciones</a> y las<a href="/politicas-privacidad.html" target="_blank"> Politicas de privacidad.</a>
+                </label>
+            </div>
+
+            <button type="button" class="btn-checkout-final btn-mobile">COMPRAR POR Whatsapp</button>
+
+        </div>
+
+    </div>
+
+    <script src="/js/checkout.js"></script>
+</body>
+</html>

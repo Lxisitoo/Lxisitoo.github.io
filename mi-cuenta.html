@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta | Tienda Caty's</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/img/Icon.png">
+</head>
+<body style="background-color: #ffffff; display: flex; flex-direction: column; min-height: 100dvh; margin: 0;"></body>
+
+   <header class="checkout-header" style="justify-content: center; padding: 25px 0; border-bottom: none;">
+    <a href="/" class="logo">
+        <img src="/img/Logo.svg" alt="Logo de Caty's" style="height: 50px;">
+    </a>
+    </header>
+
+    <div class="account-page-wrapper">
+
+        <div class="auth-tabs-container">
+            <button class="auth-tab active" id="tab-login" onclick="cambiarPestana('login')">Iniciar sesión</button>
+            <button class="auth-tab" id="tab-registro" onclick="cambiarPestana('registro')">Regístrate</button>
+        </div>
+        <div class="auth-view active" id="vista-login">
+            <form class="auth-form">
+                <div class="minimal-input-group">
+                    <label>E-mail *</label>
+                    <input type="email" required>
+                </div>
+                
+                <div class="minimal-input-group">
+                    <label>Contraseña *</label>
+                    <input type="password" required>
+                </div>
+                
+                <div class="forgot-pass-container">
+                    <a href="#">¿Olvidaste la contraseña?</a>
+                </div>
+                <button type="button" class="btn-minimal-submit">Ingresar</button>
+            </form>
+            
+            <div class="auth-switch-text">
+                ¿Todavía no tienes cuenta? <span onclick="cambiarPestana('registro')">Regístrate</span>
+            </div>
+        </div>
+        <div class="auth-view" id="vista-registro" style="display: none;">
+            <form class="auth-form">
+                <div class="minimal-input-group">
+                    <label>Nombres *</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="minimal-input-group">
+                    <label>E-mail *</label>
+                    <input type="email" required>
+                </div>
+        
+                <div class="minimal-input-group">
+                    <label>Contraseña *</label>
+                    <input type="password" required>
+                </div>
+                
+                <button type="button" class="btn-minimal-submit">Crear una cuenta</button>
+            </form>
+            
+            <div class="auth-switch-text">
+                ¿Ya tienes cuenta? <span onclick="cambiarPestana('login')">Inicia sesión</span>
+            </div>
+        </div>
+        
+        <!-- MI CUENTA DASHBOARD -->
+
+        <div id="vista-dashboard" class="account-dashboard" style="display: none;">
+            <div class="dashboard-container">
+                <aside class="dashboard-sidebar">
+                    <div class="user-welcome">
+                        <div class="avatar-circle">C</div>
+                        <h3>¡Hola, Camila!</h3>
+                        <p>Cliente VIP</p>
+                    </div>
+                    <nav class="dashboard-nav">
+                        <a href="#" class="nav-item active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                            Resumen
+                        </a>
+                        <a href="#" class="nav-item">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                            Mis Pedidos
+                        </a>
+                        <a href="#" class="nav-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Direcciones
+                        </a>
+                        <button class="btn-logout">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line>
+                            </svg>
+                            Cerrar Sesión
+                        </button>
+                    </nav>
+                </aside>
+
+                <main class="dashboard-content">
+                    <section class="summary-cards">
+                        <div class="card-stat">
+                            <h4>Pedidos Realizados</h4>
+                            <p class="stat-number">12</p>
+                        </div>
+                        <div class="card-stat">
+                            <h4>Puntos Caty's</h4>
+                            <p class="stat-number">250</p>
+                        </div>
+                    </section>
+                    
+                    <section class="dashboard-section">
+                        <h3>Últimos Pedidos</h3>
+                        <div class="table-responsive">
+                            <table class="orders-table">
+                                <thead>
+                                    <tr>
+                                        <th>Pedido</th>
+                                        <th>Fecha</th>
+                                        <th>Total</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>#10842</strong></td>
+                                        <td>22 Jun, 2026</td>
+                                        <td>S/ 145.00</td>
+                                        <td><span class="badge status-delivery">En camino</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>#10711</strong></td>
+                                        <td>15 May, 2026</td>
+                                        <td>S/ 85.00</td>
+                                        <td><span class="badge status-success">Entregado</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    
+                    <section class="dashboard-section">
+                        <h3>Dirección de Envío Predeterminada</h3>
+                        <div class="address-box">
+                            <p class="address-name">Camila Rosas Solano</p>
+                            <p>Av. Javier Prado Este 2450, Dpto 402</p>
+                            <p>San Borja, Lima, Perú</p>
+                            <p>Teléfono: +51 987 654 321</p>
+                            <a href="#" class="edit-link">Editar dirección</a>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-footer-legal">
+        <a href="/politicas-privacidad.html" class="account-privacy"> Politicas de privacidad</a>
+    </div>
+
+  
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

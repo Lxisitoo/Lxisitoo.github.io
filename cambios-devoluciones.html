@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Reclamaciones | Caty's</title>
+    <!-- CSS independiente -->
+    <link rel="stylesheet" href="/css/libro-reclamaciones.css">
+</head>
+<body class="rec-body">
+
+    <header class="rec-header">
+        <a href="index.html" class="logo">
+            <img src="/img/Logo.svg" alt="Logo de Caty's">
+        </a>
+    </header>
+
+    <main class="rec-wrapper">
+        <h1 class="rec-title">LIBRO DE RECLAMACIONES VIRTUAL</h1>
+        <p class="rec-meta">Fecha: <span id="fecha-actual"></span> | N° Hoja: <span id="num-hoja"></span></p>
+
+        <form id="rec-form" class="rec-form">
+            
+            <!-- 1. IDENTIFICACIÓN DEL CONSUMIDOR -->
+            <section class="rec-section">
+                <h3>1. IDENTIFICACIÓN DEL CONSUMIDOR</h3>
+                <div class="rec-input-group">
+                    <label>Nombre Completo *</label>
+                    <input type="text" required>
+                </div>
+                <div class="rec-row">
+                    <div class="rec-input-group">
+                        <label>Tipo de Documento *</label>
+                        <select id="tipo-doc">
+                            <option value="DNI">DNI</option>
+                            <option value="CE">Carnet Extranjería</option>
+                        </select>
+                    </div>
+                    <div class="rec-input-group">
+                        <label>Número de Documento *</label>
+                        <input type="text" id="num-doc" maxlength="8" required>
+                    </div>
+                </div>
+                <div class="rec-input-group">
+                    <label>Domicilio *</label>
+                    <input type="text" placeholder="Dirección completa" required>
+                </div>
+                <div class="rec-row">
+                    <div class="rec-input-group">
+                        <label>Teléfono *</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="rec-input-group">
+                        <label>E-mail *</label>
+                        <input type="email" required>
+                    </div>
+                </div>
+                <div class="rec-input-group">
+                    <label>Nombre del padre, madre o apoderado (si es menor de edad)</label>
+                    <input type="text" placeholder="Solo si aplica">
+                </div>
+            </section>
+
+            <!-- 2. IDENTIFICACIÓN DEL BIEN CONTRATADO -->
+            <section class="rec-section">
+                <h3>2. IDENTIFICACIÓN DEL BIEN CONTRATADO</h3>
+                <div class="rec-radio-group">
+                    <label><input type="radio" name="bien" value="producto" checked> Producto</label>
+                    <label><input type="radio" name="bien" value="servicio"> Servicio</label>
+                </div>
+                <div class="rec-input-group" style="margin-top: 15px;">
+                    <label>Descripción *</label>
+                    <textarea rows="3" placeholder="Detalle del producto o servicio" required></textarea>
+                </div>
+            </section>
+
+            <!-- 3. DETALLE DE LA RECLAMACIÓN -->
+            <section class="rec-section">
+                <h3>3. DETALLE DE LA RECLAMACIÓN Y PEDIDO</h3>
+                <div class="rec-input-group">
+                    <label>Detalle del problema *</label>
+                    <textarea rows="4" placeholder="Explique los hechos detalladamente" required></textarea>
+                </div>
+                <div class="rec-input-group">
+                    <label>Pedido del consumidor *</label>
+                    <textarea rows="2" placeholder="¿Qué solución espera?" required></textarea>
+                </div>
+                <div class="rec-radio-group">
+                    <label><input type="radio" name="tipo" value="reclamo" checked> RECLAMO (Disconformidad con productos/servicios)</label>
+                    <label><input type="radio" name="tipo" value="queja"> QUEJA (Malestar o descontento respecto a la atención)</label>
+                </div>
+            </section>
+
+            <button type="submit" class="rec-btn-submit">ENVIAR RECLAMACIÓN</button>
+        </form>
+    </main>
+
+    <footer class="rec-footer">
+        <p>* La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI.</p>
+        <p>* El proveedor debe dar respuesta al reclamo o queja en un plazo no mayor a quince (15) días hábiles.</p>
+    </footer>
+
+    <script src="/js/libro-reclamaciones.js"></script>
+</body>
+</html>

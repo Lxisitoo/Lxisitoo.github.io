@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 45">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3, .cls-9 {
+        fill: none;
+      }
+
+      .cls-1, .cls-6 {
+        stroke-width: .5px;
+      }
+
+      .cls-2, .cls-7 {
+        fill: #e8d94d;
+      }
+
+      .cls-2, .cls-9 {
+        stroke-width: .87px;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        stroke-width: .75px;
+      }
+
+      .cls-10 {
+        fill: #fff;
+      }
+
+      .cls-11 {
+        font-family: LEMONMILK-Bold, 'LEMON MILK';
+        font-size: 4.9px;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        fill: #8dff8d;
+      }
+
+      .cls-6 {
+        fill: #a09f98;
+      }
+
+      .cls-7 {
+        stroke-width: .84px;
+      }
+
+      .cls-8 {
+        fill: #604faa;
+      }
+    </style>
+  </defs>
+  <g id="Capa_3" data-name="Capa 3">
+    <rect class="cls-10" x="2.5" y="2.5" width="60" height="40"/>
+  </g>
+  <g id="Capa_6" data-name="Capa 6">
+    <g>
+      <polygon class="cls-5" points="40.17 16.46 18.01 16.46 28.55 7.95 40.17 16.46"/>
+      <line class="cls-3" x1="40.93" y1="16.46" x2="40.17" y2="16.46"/>
+      <rect class="cls-5" x="18.82" y="26.71" width="22.74" height="2.74"/>
+      <line class="cls-3" x1="39.83" y1="16.46" x2="39.83" y2="26.71"/>
+      <line class="cls-3" x1="19.95" y1="16.46" x2="19.95" y2="26.71"/>
+      <line class="cls-3" x1="22.95" y1="16.46" x2="22.95" y2="26.71"/>
+      <g>
+        <line class="cls-3" x1="21.79" y1="34.9" x2="25.9" y2="34.9"/>
+        <polygon class="cls-4" points="28.28 34.9 25.78 36.36 25.78 33.36 28.28 34.9"/>
+      </g>
+      <line class="cls-3" x1="26.4" y1="19.25" x2="30.36" y2="19.25"/>
+      <line class="cls-3" x1="27.65" y1="21.58" x2="31.34" y2="21.58"/>
+      <line class="cls-3" x1="26.4" y1="23.8" x2="30.36" y2="23.8"/>
+      <g>
+        <line class="cls-3" x1="44.6" y1="10.86" x2="40.07" y2="10.86"/>
+        <polygon class="cls-4" points="40.07 9.36 40.07 12.4 38.04 10.86 40.07 9.36"/>
+      </g>
+      <path class="cls-8" d="M45.92,18.57h-3.68v2.3c0,.4-.32.72-.72.72h-1.91c-.39,0-.71-.32-.71-.72v-2.3h-3.55c-.59,0-1.07.48-1.07,1.07v16.34c0,.59.48,1.08,1.07,1.08h10.57c.59,0,1.07-.49,1.07-1.08v-16.34c0-.59-.48-1.07-1.07-1.07ZM40.78,31.09c-1.97,0-3.57-1.6-3.57-3.57s1.6-3.57,3.57-3.57,3.57,1.6,3.57,3.57-1.6,3.57-3.57,3.57Z"/>
+      <path class="cls-2" d="M44.35,27.52c0,1.97-1.6,3.57-3.57,3.57s-3.57-1.6-3.57-3.57,1.6-3.57,3.57-3.57,3.57,1.6,3.57,3.57Z"/>
+      <polyline class="cls-9" points="39.73 34.02 40.64 34.95 42.81 32.55"/>
+      <path class="cls-6" d="M42.24,18.57v2.3c0,.4-.32.72-.72.72h-1.91c-.39,0-.71-.32-.71-.72v-2.3h3.34Z"/>
+      <text class="cls-11" transform="translate(39.12 29.38)"><tspan x="0" y="0">S</tspan></text>
+      <line class="cls-1" x1="40.78" y1="25.1" x2="40.78" y2="29.78"/>
+      <line class="cls-1" x1="39.73" y1="19.9" x2="41.27" y2="19.9"/>
+      <circle class="cls-7" cx="35.92" cy="17.34" r="3.93"/>
+      <text class="cls-11" transform="translate(34.28 19.25)"><tspan x="0" y="0">S</tspan></text>
+      <line class="cls-1" x1="35.92" y1="14.71" x2="35.92" y2="19.9"/>
+    </g>
+  </g>
+</svg>
